@@ -19,7 +19,7 @@ then run `flutter pub get`
 
 ## Usage
 
-Add `ResponsiveLauout` to your MaterialApp or CupertinoApp. Define your own UI screen size.
+Add `ResponsiveLauout` to your `MaterialApp` or `CupertinoApp`. Define your own UI screen size.
 
 ```dart
 class MyApp extends StatelessWidget {
@@ -29,7 +29,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '',
-      builder: (context, child) => ResponsiveLayout(builder: (context) {
+      builder: (context, child) => ResponsiveLayout(
+        designSize: Size(360, 800),
+        builder: (context) {
         return child!;
       }),
       home: const MyHomePage(title: 'Flutter Responsive Layout'),
@@ -60,8 +62,8 @@ class MyHomePage extends StatelessWidget {
             20.hs, // horizontal spacer
             Container(
               color: Colors.orange,
-              height: 115.h, //
-              width: 115.w,
+              height: 115.h, // ui dependent height
+              width: 115.w, // ui dependent width
             )
           ],
         ),
@@ -70,6 +72,15 @@ class MyHomePage extends StatelessWidget {
   }
 }
 ```
+
+## Useful APIs:
+
+| API   | Description                                     | Example Usage                            |
+| ----- | ----------------------------------------------- | ---------------------------------------- |
+| `.w`  | Design dependent width                          | `Container(width: 112.w)`                |
+| `.h`  | Design dependent height                         | `Container(height: 112.h)`               |
+| `.ws` | Design dependent SizedBox for horizontal spacer | `Row(children:[112.ws, Container()])`    |
+| `.hs` | Design dependent SizedBox for vertical spacer   | `Column(children:[112.hs, Container()])` |
 
 ## Contribution
 

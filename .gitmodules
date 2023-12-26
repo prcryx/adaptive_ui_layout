@@ -1,0 +1,6 @@
+[submodule "flutter_responsive_layout_example"]
+	path = flutter_responsive_layout_example
+	url = https://github.com/prcryx/flutter_responsive_layout_example.git
+[submodule "example"]
+	path = example
+	url = https://github.com/prcryx/flutter_responsive_layout_example.git
