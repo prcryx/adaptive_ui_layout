@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=C:\src\flutter"
-export "FLUTTER_APPLICATION_PATH=C:\Users\fpras\Downloads\programming\Flutter\flutter_responsive_layout"
+export "FLUTTER_APPLICATION_PATH=C:\Users\fpras\Downloads\programming\Flutter\source_code\flutter_responsive_layout\flutter_responsive_layout"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib\main.dart"
 export "FLUTTER_BUILD_DIR=build"
