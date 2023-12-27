@@ -23,12 +23,12 @@ void main() {
       final container1Size = tester.getSize(find.byKey(TestKeys.container1));
       final container2Size = tester.getSize(find.byKey(TestKeys.container2));
 
-      expect(container1Size, isNot(isNaN));
-      expect(container2Size, isNot(isNaN));
-      expect(container2Size, isNot(equals(0.0)));
-      expect(container2Size, isNot(equals(0.0)));
-      expect(container1Size.height, isNot(equals(container2Size.height)));
-      expect(container1Size.width, isNot(equals(container2Size.width)));
+      final checkHeightEquality =
+          container1Size.height != container2Size.height;
+      expect(checkHeightEquality, true);
+
+      final checkWidthEquality = container1Size.width != container2Size.width;
+      expect(checkWidthEquality, true);
     });
   });
 }
