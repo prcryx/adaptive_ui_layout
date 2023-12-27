@@ -11,7 +11,7 @@ extension ScreenExtension on num {
   ///
   double get w => this * ScreenUtils().sw;
 
-  /// Adaptive Text Size 
+  /// Adaptive Text Size
   ///
-  double get sp => this * ScreenUtils().st;
+  double get sp => ScreenUtils().setSp(this);
 }
