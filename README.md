@@ -77,12 +77,13 @@ class MyHomePage extends StatelessWidget {
 
 ## Useful APIs:
 
-| API   | Description                                     | Example Usage                            |
-| ----- | ----------------------------------------------- | ---------------------------------------- |
-| `.w`  | Design dependent width                          | `Container(width: 112.w)`                |
-| `.h`  | Design dependent height                         | `Container(height: 112.h)`               |
-| `.ws` | Design dependent SizedBox for horizontal spacer | `Row(children:[112.ws, Container()])`    |
-| `.hs` | Design dependent SizedBox for vertical spacer   | `Column(children:[112.hs, Container()])` |
+| API   | Description                                     | Example Usage                                      |
+| ----- | ----------------------------------------------- | -------------------------------------------------- |
+| `.w`  | Design dependent width                          | `Container(width: 112.w)`                          |
+| `.h`  | Design dependent height                         | `Container(height: 112.h)`                         |
+| `.ws` | Design dependent SizedBox for horizontal spacer | `Row(children:[112.ws, Container()])`              |
+| `.hs` | Design dependent SizedBox for vertical spacer   | `Column(children:[112.hs, Container()])`           |
+| `.sp` | For Text Scaling                                | `Text('prcryx', style:TextStyle(fontSize: 16.sp))` |
 
 ## Contribution
 
