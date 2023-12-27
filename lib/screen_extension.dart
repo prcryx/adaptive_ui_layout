@@ -3,11 +3,15 @@ part of flutter_responsive_layout;
 /// Adapted to the device width as per the UI Design
 ///
 extension ScreenExtension on num {
-  /// Adapted Height
+  /// Adaptive Height
   ///
   double get h => this * ScreenUtils().sh;
 
-  /// Adapted Width
+  /// Adaptive Width
   ///
   double get w => this * ScreenUtils().sw;
+
+  /// Adaptive Text Size 
+  ///
+  double get sp => this * ScreenUtils().st;
 }

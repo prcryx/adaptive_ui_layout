@@ -7,6 +7,7 @@ class ScreenUtils {
   static late MediaQueryData _mediaQueryData;
   static late double _screenHeight;
   static late double _screenWidth;
+  static late double _textScaleFactor;
   ScreenUtils._();
 
   factory ScreenUtils() {
@@ -25,10 +26,17 @@ class ScreenUtils {
     _mediaQueryData = mediaQuery;
     _screenWidth = mediaQuery.size.width;
     _screenHeight = mediaQuery.size.height;
+    _textScaleFactor = mediaQuery.textScaleFactor;
   }
 
   MediaQueryData get mediaQueryData => _mediaQueryData;
 
+  /// scale height factor
   double get sh => _screenHeight / uiHeight;
+
+  /// scale width factor
   double get sw => _screenWidth / uiWidth;
+
+  /// width dependent textScaleFactor
+  double get st => sw / _textScaleFactor;
 }
