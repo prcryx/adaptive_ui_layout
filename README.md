@@ -1,4 +1,4 @@
-# Flutter Responsive Layout
+# Adaptive UI Layout
 
 A Flutter package for creating responsive layouts, widgets, and managing dimensions easily. This package is designed to simplify the process of building responsive Flutter applications by providing a set of utilities and widgets that adapt to different screen sizes and orientations.
 
@@ -14,7 +14,7 @@ Add the following line to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_responsive_layout: ^1.0.0
+  adaptive_ui_layout: ^1.0.0
 ```
 
 then run `flutter pub get`
