@@ -1,7 +1,7 @@
 name: adaptive_ui_layout
 description: Adaptive UI Layout helps implement a responsive layout by providing helper widgets and extensions
 version: 1.0.0
-homepage: https://github.com/prcryx/flutter_responsive_layout
+homepage: https://github.com/prcryx/adaptive_ui_layout
 
 environment:
   sdk: '>=2.19.6 <4.0.0'
