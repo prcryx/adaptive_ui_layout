@@ -6,3 +6,8 @@
 
 - Change License
 - Minor Fixes
+
+## 1.1.0
+
+- MediaQuery Extension Added
+- Minor Fixes

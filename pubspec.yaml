@@ -1,6 +1,6 @@
 name: adaptive_ui_layout
 description: Adaptive UI Layout helps implement a responsive layout by providing helper widgets and extensions
-version: 1.0.1
+version: 1.1.0
 homepage: https://github.com/prcryx/adaptive_ui_layout
 
 environment:
