@@ -14,7 +14,7 @@ Add the following line to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  adaptive_ui_layout: ^1.0.0
+  adaptive_ui_layout: ^1.1.0
 ```
 
 then run `flutter pub get`
@@ -66,6 +66,12 @@ class MyHomePage extends StatelessWidget {
               color: Colors.orange,
               height: 115.h, // ui dependent height
               width: 115.w, // ui dependent width
+            ),
+            20.hs,
+            Container(
+              color: Colors.lime,
+              height: context.mediaQueryData.size.height * 0.1, // depend on MediaQuery
+              width: 115,
             )
           ],
         ),
@@ -84,6 +90,7 @@ class MyHomePage extends StatelessWidget {
 | `.ws` | Design dependent SizedBox for horizontal spacer | `Row(children:[112.ws, Container()])`              |
 | `.hs` | Design dependent SizedBox for vertical spacer   | `Column(children:[112.hs, Container()])`           |
 | `.sp` | For Text Scaling                                | `Text('prcryx', style:TextStyle(fontSize: 16.sp))` |
+| `.mediaQueryData` | For Accessing MediaQuery Data                                | `Padding(padding: EdgeInsets.only(top: context.mediaQueryData.viewPadding.top), child:...)` |
 
 ## Contribution
 
