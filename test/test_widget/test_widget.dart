@@ -23,7 +23,7 @@ class TestWidget extends StatelessWidget {
             color: Colors.orange,
             height: 115.h,
             width: 115.w,
-          )
+          ),
         ],
       ),
     );
