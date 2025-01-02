@@ -1,4 +1,4 @@
-part of flutter_responsive_layout;
+import 'package:adaptive_ui_layout/screen_utils.dart';
 
 /// Adapted to the device width as per the UI Design
 ///

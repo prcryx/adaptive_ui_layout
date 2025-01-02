@@ -1,4 +1,5 @@
-part of flutter_responsive_layout;
+import 'package:adaptive_ui_layout/screen_utils.dart';
+import 'package:flutter/material.dart';
 
 extension WidgetExtension on num {
   /// SizedBox with adaptive height

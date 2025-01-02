@@ -1,4 +1,5 @@
-part of flutter_responsive_layout;
+import 'package:adaptive_ui_layout/screen_layout.dart';
+import 'package:flutter/material.dart';
 
 class ScreenUtils {
   static late ScreenUtils _instance;
